@@ -1,17 +1,21 @@
 let questionString = document.getElementById('question-string')
 let optionString = document.getElementById('option-string')
 
-let startQuiz = document.getElementById('start-quiz').addEventListener('click' , runQuiz);
+
+let startQuiz = document.getElementById('start-quiz')
+startQuiz.addEventListener('click', runQuiz);
 
 
 
 
 
-function runQuiz () {
-
+function runQuiz (event) {
+    startQuiz.style.backgroundColor = "yellow";
+    startQuiz.innerHTML = "Quit Game";
     
-
-    let questionString = document.getElementById('question-string').value = '';
+for (let i = 0; i < questions.length; questions++) {
+   console.log(questions)
+}
 }
 
 
