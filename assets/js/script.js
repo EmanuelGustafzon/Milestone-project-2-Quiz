@@ -1,5 +1,5 @@
 let questionString = document.getElementById('question-string')
-let optionString = document.getElementById('option-string')
+let optionString = document.getElementsByClassName('option-string')
 
 
 let startQuiz = document.getElementById('start-quiz')
@@ -12,10 +12,13 @@ startQuiz.addEventListener('click', runQuiz);
 function runQuiz (event) {
     startQuiz.style.backgroundColor = "yellow";
     startQuiz.innerHTML = "Quit Game";
-    
-for (let i = 0; i < questions.length; questions++) {
-   console.log(questions)
-}
+  
+    questionString.innerHTML ="this is a key";
+
+    for (i = 0; i < optionString.length; i++) {
+        optionString[i].innerHTML = "hey";
+    }
+
 }
 
 
