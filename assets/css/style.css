@@ -1,0 +1,24 @@
+
+
+#play-area {
+    background-color: black;
+    width: 600px;
+    height: 600px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+#question-box {
+    width: 500px;
+    height: 100px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.btn {
+    width: 280px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
