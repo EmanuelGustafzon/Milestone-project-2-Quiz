@@ -1,13 +1,15 @@
 const boxQuestionOptions = document.getElementById('box-question-options')
 const questionElement = document.getElementById('question')
 const options = document.getElementById('options')
-
+const next =document.getElementById('next')
 let shuffledQuestions, currentQuestionIndex
 
 let startQuiz = document.getElementById('start-quiz')
 startQuiz.addEventListener('click', runQuiz);
-
-
+next.addEventListener('click', () => {
+    currentQuestionIndex++ 
+    setNextQuestion()
+})
 
 function runQuiz () {
     
@@ -19,8 +21,11 @@ function runQuiz () {
 }
 
 function setNextQuestion() {
+    resetState()
 showQuestion(shuffledQuestions[currentQuestionIndex])
 }
+
+
 
 function showQuestion(question) {
 questionElement.innerText = question.question
@@ -36,9 +41,42 @@ options.appendChild(button)
 })
 }
 
-function selectAnswer () {
+function resetState () {
+    next.classList.add('hide')
+    while (options.firstChild) {
+        options.removeChild
+        (options.firstChild)
+    }
+} 
+
+function selectAnswer (e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    Array.from(options.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+})
 
 }
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+        if (correct) {
+            element.style.backgroundColor = 'green'
+            incrementScore();
+        } else {
+            element.style.backgroundColor = 'red'}
+          
+    }
+
+   function clearStatusClass(element) {
+      
+   }
+
+   function incrementScore() {
+       let oldScore = parseInt(document.getElementById('score').innerText)
+       document.getElementById('score').innerText = ++oldScore
+   }
+
 
 
 
