@@ -1,36 +1,49 @@
-let displayQuestionOptions = document.getElementById('display-question-options')
-let questionBox = document.getElementById('question-box')
-let optionsBox = document.getElementById('options-box')
+const boxQuestionOptions = document.getElementById('box-question-options')
+const questionElement = document.getElementById('question')
+const options = document.getElementById('options')
 
+let shuffledQuestions, currentQuestionIndex
 
 let startQuiz = document.getElementById('start-quiz')
 startQuiz.addEventListener('click', runQuiz);
 
 
 
-function runQuiz (event) {
+function runQuiz () {
     startQuiz.style.backgroundColor = "yellow";
     startQuiz.innerHTML = "Stop Quiz and Show Result";
-  
-   
+    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestionIndex = 0
+    setNextQuestion() 
+}
 
+function setNextQuestion() {
+showQuestion(shuffledQuestions[currentQuestionIndex])
+}
+
+function showQuestion(question) {
+questionElement.innerText = question.question
+}
+
+function selectAnswer () {
 
 }
+
+
+
+
 
 /**
  * Questions Arrey
  */
 let questions = [ {
     question: 'how do you say hello in spanish?',
-    options: [{a: 'Hola'},{b: 'Ciao'}, {c: 'Que tal'} , {d: 'Bueno'}], 
+    options: [{ text: 'Hola' , correct: true } , { text: 'Ciao', correct: false}, { text: 'Que tal', correct: false } , { text: 'Bueno', correct: false }], 
 },
 {
     question: 'how do you say hello in Swedish?',
-    years: [{a: 'hej'},{b: 'nej'}, {c: 'dosa'} , {d: 'rem'}], 
+    years: [{text: 'hej'},{text: 'nej'}, {text: 'dosa'} , {text: 'rem'}], 
 },
-{
-    question: 'how do you say hello in english?',
-    years: [{a: 'Hello'},{b: 'hi'}, {c: 'bye'} , {d: 'car'}], 
-},
+
 
 ]
