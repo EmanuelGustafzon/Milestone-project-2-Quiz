@@ -6,7 +6,7 @@ const questionElement = document.getElementById('question')
 const options = document.getElementById('options')
 const next = document.getElementById('next')
 let shuffledQuestions, currentQuestionIndex
-
+let result = document.getElementById('result')
 let startQuiz = document.getElementById('start-quiz')
 startQuiz.addEventListener('click', runQuiz);
 
@@ -24,6 +24,7 @@ function runQuiz () {
         boxQuestionOptions.classList.remove('hide')
         next.classList.remove('hide')
         startQuiz.classList.add('hide')
+        result.classList.add('hide')
      
 
     shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -54,7 +55,6 @@ button.classList.add('btn')
 
 
 
-
 if (answer.correct) {
 button.dataset.correct = answer.correct
 
@@ -65,7 +65,7 @@ options.appendChild(button)
 }
  // This function removes the previous question
 function resetState () {
-   
+  
     
     while (options.firstChild) {
         options.removeChild
@@ -92,10 +92,13 @@ function selectAnswer (e) {
 if (shuffledQuestions.length > currentQuestionIndex + 1) {
     next.classList.remove('hide')
   } else {
+    result.classList.remove('hide')
+    result.innerText = (`Congratulations, you got ${oldScore} points! `)
+    
     startQuiz.classList.remove('hide')
     next.classList.add('hide')
     boxQuestionOptions.classList.add('hide')
-    alert(`You got ${oldScore} points!`)
+    
   }
 }
 
@@ -112,18 +115,10 @@ function setStatusClass(element, correct) {
     }
 
   
-// Here is the countdown
 
-function timeStart () {
-    let timeleft = 10;
-    let downloadTimer = setInterval(function(){
-      if(timeleft <= 0){
-        clearInterval(downloadTimer);
-      }
-      document.getElementById("progressBar").value = 10 - timeleft;
-      timeleft -= 1;
-    }, 1000);
-    }
+    
+
+    
 
     
     

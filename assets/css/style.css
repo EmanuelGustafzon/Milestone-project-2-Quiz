@@ -74,10 +74,6 @@ body {
     padding: 25px;
   
 }
-#progress-bar::before {
-    content:"Time Left";
-    padding-top:10px;
-}
 
 .hide {
     display: none;
