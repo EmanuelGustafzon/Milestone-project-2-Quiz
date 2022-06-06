@@ -86,7 +86,7 @@ function selectAnswer (e) {
 
     if (correct) {
         oldScore = parseInt(document.getElementById('score').innerText)
-        document.getElementById('score').innerText = ++oldScore
+        document.getElementById('score').innerText = ++oldScore 
     }
 })
 if (shuffledQuestions.length > currentQuestionIndex + 1) {

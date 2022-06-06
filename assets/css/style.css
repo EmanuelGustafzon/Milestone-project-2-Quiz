@@ -1,6 +1,6 @@
 body {
-    background: url(../images/spansih.jpg) alt="none" no-repeat center center ;
-    width: 800px;
+    background: url(../images/spansih.jpg) no-repeat center center ;
+    width: 400px;
     width: 100%;
 }
 
@@ -10,8 +10,9 @@ body {
     height: 500px;
     margin-left: 30%;
     margin-bottom:20px;
+    margin-top: 5%;
     position: relative;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 #question-box {
@@ -27,6 +28,7 @@ body {
     font-size: 150%;
     text-align: center;
     margin-top: 50px;
+    padding-top: 12px;
     color:black;
 }
 
@@ -56,6 +58,10 @@ btn:hover {
     border-radius: 50%;
     background-color:cadetblue;
     margin-left: 25%;
+}
+#score-holder::after {
+    content:"Your Score";
+    width: 25px;
 }
 #score {
     text-align: center;
