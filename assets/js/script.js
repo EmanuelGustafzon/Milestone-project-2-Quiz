@@ -4,22 +4,24 @@
 const boxQuestionOptions = document.getElementById('box-question-options')
 const questionElement = document.getElementById('question')
 const options = document.getElementById('options')
-const next =document.getElementById('next')
+const next = document.getElementById('next')
 let shuffledQuestions, currentQuestionIndex
 
 let startQuiz = document.getElementById('start-quiz')
-startQuiz.addEventListener('click', runQuiz , timeEnd() , timeStart());
+startQuiz.addEventListener('click', runQuiz);
 
 next.addEventListener('click', () => {
     currentQuestionIndex++ 
     setNextQuestion()
-    timeEnd()
-    timeStart()
+    
 })
 
 function runQuiz () {
     let oldScore = parseInt(document.getElementById('score').innerText)
         document.getElementById('score').innerText = 0
+        boxQuestionOptions.classList.remove('hide')
+        next.classList.remove('hide')
+     
 
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -104,20 +106,23 @@ function setStatusClass(element, correct) {
 // Here is the countdown
 
 function timeStart () {
-let timeleft = 10;
-let downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-  setNextQuestion()
-  }
-  document.getElementById("progressBar").value = 10 - timeleft;
-  timeleft -= 1;
-}, 1000);
+    let timeleft = 10;
+    let downloadTimer = setInterval(function(){
+      if(timeleft <= 0){
+      
+      }
+      document.getElementById("progressBar").value = 10 - timeleft;
+      timeleft -= 1;
+    }, 1000);
+    
+    }
 
-}
+    function timeEnd () {
 
-function timeEnd () {
-   
-}
+    }
+    
+
+
  
 
 
@@ -138,6 +143,12 @@ let questions = [ {
     question: 'how do you say hello in Swedish?',
     answers: [{text: 'nej', correct: false},{text: 'hej', correct: true}, {text: 'dosa', correct: false} , {text: 'rem', correct: false}], 
 },
-
-
+{
+    question: 'how do you say hello in French?',
+    answers: [{ text: 'Hola' , correct: true } , { text: 'Ciao', correct: false}, { text: 'Que tal', correct: false } , { text: 'Bueno', correct: false }], 
+},
+{
+    question: 'how do you say hello in English?',
+    answers: [{text: 'nej', correct: false},{text: 'hej', correct: true}, {text: 'dosa', correct: false} , {text: 'rem', correct: false}], 
+},
 ]

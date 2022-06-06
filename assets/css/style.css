@@ -1,19 +1,27 @@
 
 
 #play-area {
-    background-color: #f5f2f9;
+    background-color: lightseagreen;
     width: 600px;
     height: 600px;
     margin-left: 25%;
     margin-top: 10%;
+    position: relative;
+    border-radius: 10px;
 }
 
 #question-box {
     width: 500px;
-    height: 100px;
+    height: 200px;
     margin-left: 50px;
     margin-bottom: 30px;
     background-color: beige;
+    text-align: center;
+}
+
+ p {
+    font-size: 130%;
+    text-align: center;
 }
 
 .btn {
@@ -22,6 +30,13 @@
     margin-top: 30px;
     margin-left: 10px;
     background-color: beige;
+    border: none;
+    border-radius: 45px;
+
+}
+
+btn:hover {
+    size: 110%;
 }
 
 #score-holder {
@@ -32,6 +47,13 @@
 #score {
     text-align: center;
     vertical-align: middle;
+}
+
+#progress-bar {
+    float:right;
+  
+    padding: 5px;
+  
 }
 
 

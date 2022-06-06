@@ -8,15 +8,17 @@
     <title>Quiz</title>
 </head>
 <body>
-
+  <header><div id="score-holder"><p id="score">0</p></div>
+  <progress value="0" max="10" id="progress-bar"></progress>
+</header>
     <!--Playground area-->
 
     <div id="play-area">
-<div id="score-holder"><p id="score">0</p></div>
-<progress value="0" max="10" id="progressBar"></progress>
-<div id="box-question-options">
-<div id="question">Question Displays Here</div>
-  <div id="options">
+
+<div id="box-question-options" class="hide">
+<div id="question-holder" ><p id="question">Question Displays Here
+</p></div>
+  <div id="options" class-btn-grid>
     <button class="btn "></button>
     <button class="btn"></button>
     <button class="btn"></button>
@@ -24,8 +26,8 @@
   </div>
 </div>
 
-<button id="start-quiz" class="btn">Run Quiz</button>
-<button id="next" class="btn" >Next</button>
+<button id="start-quiz" class="btn start-btn">Run Quiz</button>
+<button id="next" class="btn next-bt hide" >Next</button>
 </div>
     
 <script src="assets/js/script.js"></script>
