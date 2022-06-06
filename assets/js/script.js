@@ -8,11 +8,12 @@ const next = document.getElementById('next')
 let shuffledQuestions, currentQuestionIndex
 
 let startQuiz = document.getElementById('start-quiz')
-startQuiz.addEventListener('click', runQuiz,);
+startQuiz.addEventListener('click', runQuiz);
 
 next.addEventListener('click', () => {
     currentQuestionIndex++ 
     setNextQuestion()
+    
  
 })
 
@@ -28,7 +29,6 @@ function runQuiz () {
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion() 
-    startQuiz.style.backgroundColor = "yellow";
     startQuiz.innerHTML = "Restart";
 
 }
@@ -50,7 +50,7 @@ question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
 button.classList.add('btn')
- 
+
 
 
 
@@ -103,11 +103,11 @@ function setStatusClass(element, correct) {
  
    
     if (correct) {
-        element.style.backgroundColor = 'green'   
+        element.style.backgroundColor = '#9BFDCE'   
        
    
     } else {
-        element.style.backgroundColor = 'red'}
+        element.style.backgroundColor = '#FC5F7C'}
     
     }
 
@@ -123,13 +123,9 @@ function timeStart () {
       document.getElementById("progressBar").value = 10 - timeleft;
       timeleft -= 1;
     }, 1000);
+    }
+
     
-    }
-
-    function timeEnd () {
-        clearTimeout('progressBar')
-
-    }
     
 
 

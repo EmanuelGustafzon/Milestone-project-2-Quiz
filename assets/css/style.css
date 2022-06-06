@@ -5,7 +5,7 @@ body {
 }
 
 #play-area {
-    background-color: lightseagreen;
+    background-color:#012627;
     width: 40%;
     height: 500px;
     margin-left: 30%;
@@ -20,7 +20,7 @@ body {
     height: 200px;
     margin-left: 50px;
     margin-bottom: 30px;
-    background-color: beige;
+    background-color:#EAEAEC;
     text-align: center;
 }
 
@@ -29,7 +29,7 @@ body {
     text-align: center;
     margin-top: 50px;
     padding-top: 12px;
-    color:black;
+    color:#EAEAEC;
 }
 
 .btn {
@@ -37,7 +37,7 @@ body {
     height: 75px;
     margin-top: 30px;
     margin-left: 2.5%;
-    background-color: beige;
+    background-color:#EAEAEC;
     border: none;
     border-radius: 45px;
 
@@ -48,20 +48,20 @@ body {
     margin-left:10%;
 }
 
-btn:hover {
-    size: 110%;
+.btn:hover {
+    background-color:#FED65D;
 }
 
 #score-holder {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color:cadetblue;
+    background-color:#012627;
     margin-left: 25%;
 }
 #score-holder::after {
     content:"Your Score";
-    width: 25px;
+ 
 }
 #score {
     text-align: center;
@@ -70,13 +70,14 @@ btn:hover {
 
 #progress-bar {
     float:right;
-  
-    padding: 5px;
+  margin-right: 20%;
+    padding: 25px;
   
 }
-
-
-
+#progress-bar::before {
+    content:"Time Left";
+    padding-top:10px;
+}
 
 .hide {
     display: none;
