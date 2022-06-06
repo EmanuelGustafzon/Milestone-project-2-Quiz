@@ -1,4 +1,4 @@
-
+// https://www.youtube.com/watch?v=riDzcEQbX6k
 
 const boxQuestionOptions = document.getElementById('box-question-options')
 const questionElement = document.getElementById('question')
@@ -22,11 +22,17 @@ function runQuiz () {
     setNextQuestion() 
     startQuiz.style.backgroundColor = "yellow";
     startQuiz.innerHTML = "Restart";
+
+ 
+
 }
 
 function setNextQuestion() {
     resetState()
 showQuestion(shuffledQuestions[currentQuestionIndex])
+
+
+
 }
 
 
@@ -38,6 +44,8 @@ question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
 button.classList.add('btn')
+
+
 
 if (answer.correct) {
 button.dataset.correct = answer.correct
@@ -60,7 +68,7 @@ function resetState () {
 function selectAnswer (e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(document.body,correct)
+    // setStatusClass(document.body,correct)
     Array.from(options.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
 
@@ -85,8 +93,9 @@ function setStatusClass(element, correct) {
     }
 
   
+// Here is the countdown
 
- 
+
 
 
  
