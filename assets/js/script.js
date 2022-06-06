@@ -1,4 +1,5 @@
 // https://www.youtube.com/watch?v=riDzcEQbX6k
+// https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
 
 const boxQuestionOptions = document.getElementById('box-question-options')
 const questionElement = document.getElementById('question')
@@ -7,23 +8,24 @@ const next =document.getElementById('next')
 let shuffledQuestions, currentQuestionIndex
 
 let startQuiz = document.getElementById('start-quiz')
-startQuiz.addEventListener('click', runQuiz);
+startQuiz.addEventListener('click', runQuiz , timeEnd() , timeStart());
 
 next.addEventListener('click', () => {
     currentQuestionIndex++ 
     setNextQuestion()
+    timeEnd()
+    timeStart()
 })
 
 function runQuiz () {
     let oldScore = parseInt(document.getElementById('score').innerText)
         document.getElementById('score').innerText = 0
+
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion() 
     startQuiz.style.backgroundColor = "yellow";
     startQuiz.innerHTML = "Restart";
-
- 
 
 }
 
@@ -44,6 +46,8 @@ question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
 button.classList.add('btn')
+ 
+
 
 
 
@@ -55,7 +59,7 @@ button.addEventListener('click' , selectAnswer )
 options.appendChild(button)
 })
 }
-
+ // This function removes the previous question
 function resetState () {
     next.classList.add('hide')
     
@@ -63,12 +67,16 @@ function resetState () {
         options.removeChild
         (options.firstChild)
     }
+
+    
+
+
 } 
 
 function selectAnswer (e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    // setStatusClass(document.body,correct)
+    
     Array.from(options.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
 
@@ -95,9 +103,21 @@ function setStatusClass(element, correct) {
   
 // Here is the countdown
 
+function timeStart () {
+let timeleft = 10;
+let downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+  setNextQuestion()
+  }
+  document.getElementById("progressBar").value = 10 - timeleft;
+  timeleft -= 1;
+}, 1000);
 
+}
 
-
+function timeEnd () {
+   
+}
  
 
 
