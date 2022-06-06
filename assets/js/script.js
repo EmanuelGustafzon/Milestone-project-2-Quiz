@@ -94,7 +94,8 @@ if (shuffledQuestions.length > currentQuestionIndex + 1) {
   } else {
     startQuiz.classList.remove('hide')
     next.classList.add('hide')
-    alert(hi)
+    boxQuestionOptions.classList.add('hide')
+    alert(`You got ${oldScore} points!`)
   }
 }
 
