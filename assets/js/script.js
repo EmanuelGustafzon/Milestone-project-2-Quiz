@@ -15,7 +15,8 @@ next.addEventListener('click', () => {
 })
 
 function runQuiz () {
-    
+    let oldScore = parseInt(document.getElementById('score').innerText)
+        document.getElementById('score').innerText = 0
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion() 
@@ -64,7 +65,7 @@ function selectAnswer (e) {
     setStatusClass(button, button.dataset.correct)
 
     if (correct) {
-        let oldScore = parseInt(document.getElementById('score').innerText)
+        oldScore = parseInt(document.getElementById('score').innerText)
         document.getElementById('score').innerText = ++oldScore
     }
 })
@@ -72,7 +73,7 @@ function selectAnswer (e) {
 }
 
 function setStatusClass(element, correct) {
-  
+ 
    
     if (correct) {
         element.style.backgroundColor = 'green'   
@@ -83,7 +84,12 @@ function setStatusClass(element, correct) {
     
     }
 
+  
 
+ 
+
+
+ 
 
 
 
