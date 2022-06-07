@@ -146,7 +146,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Excuse me! (To get someones attantion)"',
-    answers: [{ text: 'perdón' , correct: false } , { text: 'Descrubrir', correct: false}, { text: 'Perlon', correct: true } , { text: 'Discargar', correct: false }], 
+    answers: [{ text: 'perdón' , correct: true } , { text: 'Descrubrir', correct: false}, { text: 'Perlon', correct: false } , { text: 'Discargar', correct: false }], 
 },
 {
     question: 'how do you say "Sorry!" in Spanish?',
