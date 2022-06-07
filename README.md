@@ -2,32 +2,37 @@
 This is a quiz for whoever who want to learn spanish. It is a collection of 100 commonly used phrases. I find quizes a great way to learn a language. If you have never spoken a spanish before the first step is to speak as much as possible. Use those phrases daily and you will see how you soon can start having small conversations with people in spanish. 
 ## https://emanuelgustafzon.github.io/Milestone-project-1-music-lessons/.
 
-![Resposivity](/assets/images/different-screens.jpg)
+![Resposivity](/assets/images/IMG-1525.jpg)
 
 ## Features 
 - Navigation
   - Score counter so that the user can see how he or she is doing.
   - Social media links to my Github and Linkedin account. This is for employers to see my profile, experience and skills.
 
-![Navigation bar](/assets/images/navigation.PNG)
+![Header](/assets/images/score.jpg)
 
 - Landing page
   - The first section the user sees is a introduction to the quiz and a run buttom.
-  - It would be confusing for the user to only see a quiz when landing on the page. That is why I hideed the quiz and instead show a introduction about it. 
+  - It would be confusing for the user to only see a quiz when landing on the page. That is why it is hidden in the beginning and instead a introduction to the quiz is shown. 
 
-![Hero section](/assets/images/hero.jpg)
+![Landing page](/assets/images/Sk%C3%A4rmbild%20(114).png)
  
 - Quiz
   - The quiz has a total amount of 100 questions. This is questions about phrases in spanish. The purpose is that the user will learn spanish in an entertaining way. 
   - It would be tiereing to go through a 100 questions at ones. That is why every time you play the quiz you get 15 questions to answer. The 15 questions is totally random from the collection of 100 spanish phrases. 
 
-![Classes section](/assets/images/Classes.jpg)
+![Quiz](/assets/images/Sk%C3%A4rmbild%20(115).png)
+
+- Give answer
+  - When the user have pressed the answer she or he thinks is correct the correct answer is shown directly so the user can learn from the game. 
+  - If the answer is correct the user get points.
+![Answer](/assets/images/Sk%C3%A4rmbild%20(116).png)
 
 - Finished Quiz section
-  - After the user have answered the 15 questions a score is shown up. Every right answered question gives 4 points. 
+  - After the user have answered the 15 questions a score is shown up. 
   - The user also get the option to restart the quiz.  
 
-![The why us section](/assets/images/why-us.jpg)
+![Finished quiz round](/assets/images/Sk%C3%A4rmbild%20(117).png)
 
 
   ## Testing 
@@ -52,11 +57,11 @@ This is a quiz for whoever who want to learn spanish. It is a collection of 100 
 
   - Desktop
 
-    ![Desktop Accessibility](/assets/images/Desktop.jpg)
+    ![Desktop Accessibility](/assets/images/IMG-1524.jpg)
 
   - Mobile 
 
-    ![Mobile Accessibility](/assets/images/Mobile.jpg)
+    ![Mobile Accessibility](/assets/images/IMG-1523.jpg)
 
   ## User Expereince
 

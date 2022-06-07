@@ -191,11 +191,11 @@ let questions = [ {
 },
 {
     question: 'how do you say "Welcome!" in Spanish?',
-    answers: [{text: 'Hasta luego', correct: true},{text: 'Lo quiero?', correct: false}, {text: 'Lo perdon!', correct: false} , {text: 'Lo discuple!', correct: false}], 
+    answers: [{text: 'Bienvenido/a', correct: true},{text: 'Lo quiero?', correct: false}, {text: 'Lo perdon!', correct: false} , {text: 'Lo discuple!', correct: false}], 
 },
 {
     question: 'how do you say "See you later" in Spanish?',
-    answers: [{ text: 'Buenos noches' , correct: false } , { text: 'Buenos días', correct: true}, { text: 'hola', correct: false } , { text: 'buenos tardes', correct: false }], 
+    answers: [{ text: 'Buenos noches' , correct: false } , { text: 'Hasta luego', correct: true}, { text: 'hola', correct: false } , { text: 'buenos tardes', correct: false }], 
 },
 {
     question: 'how do you say "See you" in spanish?',
@@ -483,7 +483,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "I am thirsty" in Spanish?',
-    answers: [{ text: 'engo sed' , correct: true } , { text: 'Quieres ver una película?', correct: false}, { text: 'Al pagar?', correct: false } , { text: 'Un gusto', correct: false }], 
+    answers: [{ text: 'tengo sed' , correct: true } , { text: 'Quieres ver una película?', correct: false}, { text: 'Al pagar?', correct: false } , { text: 'Un gusto', correct: false }], 
 },
 {
     question: 'how do you say "At what time does the bus/train arrive?" in spanish?',
@@ -553,7 +553,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Quick!" in Spanish',
-    answers: [{text: 'tienes hambre?', correct: false},{text: 'Más o menos', correct: false}, {text: 'Encantado de conocerte', correct: false} , {text: 'Quién?', correct: true}], 
+    answers: [{text: 'tienes hambre?', correct: false},{text: 'Más o menos', correct: false}, {text: 'Encantado de conocerte', correct: false} , {text: 'rapido', correct: true}], 
 },
 {
     question: 'how do you say "Why? " in Spanish?',
