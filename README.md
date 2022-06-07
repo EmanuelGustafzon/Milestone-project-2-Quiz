@@ -1,5 +1,5 @@
 # Learn Spanish Quiz
-This is a quiz for whoever who want to learn spanish. It is a collection of 100 commonly used phrases. I find quizes a great way to learn a language. If you have never spoken a spanish before the first step is to speak as much as possible. Use those phrases daily and you will see how you soon can start having small conversations with people in spanish. 
+This is a quiz for whoever who want to learn spanish. It is a collection of 100 commonly used phrases. I find quizes a great way to learn a language. If you have never spoken spanish before the first step is to speak as much as possible. Use those phrases daily and you will see how you soon can start having small conversations with people in spanish. 
 ## https://emanuelgustafzon.github.io/Milestone-project-2-Quiz/.
 
 ![Resposivity](/assets/images/IMG-1525.jpg)

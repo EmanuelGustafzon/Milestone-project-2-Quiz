@@ -21,6 +21,8 @@ function runQuiz () {
         startQuiz.classList.add('hide');
         result.classList.add('hide');
         document.getElementById('intro').classList.add('hide')
+        oldScore = parseInt(document.getElementById('score').innerText);
+        document.getElementById('score').innerText = 0;
 
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
@@ -39,6 +41,7 @@ question.answers.forEach(answer => {
     const button = document.createElement('button');
     button.innerText = answer.text
 button.classList.add('btn');
+
 
 if (answer.correct) {
 button.dataset.correct = answer.correct;
@@ -65,7 +68,7 @@ function selectAnswer (e) {
         document.getElementById('score').innerText = ++oldScore;
     }
 });
-if (shuffledQuestions.length > currentQuestionIndex + 111) {
+if (shuffledQuestions.length > currentQuestionIndex + 104) {
     next.classList.remove('hide');
   } else {
     result.classList.remove('hide');
@@ -116,7 +119,7 @@ let questions = [ {
     answers: [{ text: 'Puedo descansar?' , correct: false } , { text: 'Puedo pagar?', correct: true}, { text: 'Al pagar?', correct: false } , { text: 'quiero poder', correct: false }], 
 },
 {
-    question: 'how do you say "I want Beer" in spanish?',
+    question: 'how do you say "I want a Beer" in spanish?',
     answers: [{text: 'Quiero beber', correct: false},{text: 'Quiero un biro', correct: false}, {text: 'Quierp Vino!', correct: false} , {text: 'Quiero una cerveza', correct: true}], 
 },
 {
@@ -125,7 +128,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "I need to drink water" in spanish?',
-    answers: [{text: 'Necessito que tomar agua', correct: true},{text: 'Ahora Quiero beber agua', correct: false}, {text: 'Me nesessito aqua', correct: false} , {text: 'Me necessito acui', correct: false}], 
+    answers: [{text: 'Necessito tomar agua', correct: true},{text: 'Ahora Quiero beber agua', correct: false}, {text: 'Me nesessito aqua', correct: false} , {text: 'Me necessito acui', correct: false}], 
 },
 // Questions 10-20 
 {
@@ -146,7 +149,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Excuse me! (To get someones attantion)"',
-    answers: [{ text: 'perdón' , correct: true } , { text: 'Descrubrir', correct: false}, { text: 'Perlon', correct: false } , { text: 'Discargar', correct: false }], 
+    answers: [{ text: 'perdón' , correct: false } , { text: 'Descrubrir', correct: false}, { text: 'Perlon', correct: true } , { text: 'Discargar', correct: false }], 
 },
 {
     question: 'how do you say "Sorry!" in Spanish?',
@@ -191,7 +194,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Welcome!" in Spanish?',
-    answers: [{text: 'Bienvenido/a', correct: true},{text: 'Lo quiero?', correct: false}, {text: 'Lo perdon!', correct: false} , {text: 'Lo discuple!', correct: false}], 
+    answers: [{text: 'Bienvenido', correct: true},{text: 'Lo quiero?', correct: false}, {text: 'Lo perdon!', correct: false} , {text: 'Lo discuple!', correct: false}], 
 },
 {
     question: 'how do you say "See you later" in Spanish?',
@@ -228,7 +231,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "What’s up?" in Spanish?',
-    answers: [{ text: 'tengo hambre' , correct: false } , { text: 'Encantado de conocerte', correct: false}, { text: '¿Qué pasa?', correct: true } , { text: 'Un gusto', correct: false }], 
+    answers: [{ text: 'tengo hambre' , correct: false } , { text: 'Encantado de conocerte', correct: false}, { text: 'Qué pasa?', correct: true } , { text: 'Un gusto', correct: false }], 
 },
 {
     question: 'how do you say "Good, thanks " in Spanish?',
@@ -348,7 +351,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "swimming" in spanish?',
-    answers: [{text: 'Nadar', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
+    answers: [{text: 'nadar', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
 },
 {
     question: 'how do you say "Good luck!" in Spanish?',
@@ -422,7 +425,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "How?" in Spanish',
-    answers: [{text: 'tienes hambre?', correct: false},{text: 'Más o menos', correct: false}, {text: 'Cómo', correct: true} , {text: 'Estás casado?', correct: false}], 
+    answers: [{text: 'tienes hambre?', correct: false},{text: 'Más o menos', correct: false}, {text: 'Cómo?', correct: true} , {text: 'Estás casado?', correct: false}], 
 },
 {
     question: 'how do you say "What time is it? " in Spanish?',
@@ -471,7 +474,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Can I ask you for a" in spanish?',
-    answers: [{text: 'Es la una', correct: false},{text: 'Encantado de conocerte', correct: false}, {text: 'Tus hijos aún viven en casa?', correct: false} , {text: 'Le pido un(a)', correct: true}], 
+    answers: [{text: 'Es la una', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Tus hijos aún viven en casa?', correct: false} , {text: 'Le pido un(a)', correct: false}], 
 },
 {
     question: 'how do you say "It is eight o’clock" in Spanish?',
@@ -483,11 +486,11 @@ let questions = [ {
 },
 {
     question: 'how do you say "I am thirsty" in Spanish?',
-    answers: [{ text: 'tengo sed' , correct: true } , { text: 'Quieres ver una película?', correct: false}, { text: 'Al pagar?', correct: false } , { text: 'Un gusto', correct: false }], 
+    answers: [{ text: 'Tengo sed' , correct: true } , { text: 'Quieres ver una película?', correct: false}, { text: 'Al pagar?', correct: false } , { text: 'Un gusto', correct: false }], 
 },
 {
-    question: 'how do you say "At what time does the bus/train arrive?" in spanish?',
-    answers: [{text: 'A qué hora llega el tren /el autobús?', correct: true},{text: 'tienes hambre', correct: false}, {text: 'Un gusto', correct: false} , {text: 'Vienes a menudo?', correct: false}], 
+    question: 'how do you say "At what time does the bus / train arrive?" in spanish?',
+    answers: [{text: 'A qué hora llega el tren / el autobús?', correct: true},{text: 'tienes hambre', correct: false}, {text: 'Un gusto', correct: false} , {text: 'Vienes a menudo?', correct: false}], 
 },
 {
     question: 'how do you say "A single ticket" in Spanish?',
@@ -553,7 +556,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Quick!" in Spanish',
-    answers: [{text: 'tienes hambre?', correct: false},{text: 'Más o menos', correct: false}, {text: 'Encantado de conocerte', correct: false} , {text: 'rapido', correct: true}], 
+    answers: [{text: 'tienes hambre?', correct: false},{text: 'Más o menos', correct: false}, {text: 'Encantado de conocerte', correct: false} , {text: 'Rapido', correct: true}], 
 },
 {
     question: 'how do you say "Why? " in Spanish?',
@@ -561,40 +564,16 @@ let questions = [ {
 },
 {
     question: 'how do you say "Who? " in spanish?',
-    answers: [{text: 'Quién?', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
+    answers: [{text: 'Quién', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
 },
 {
     question: 'how do you say "What?" in Spanish?',
-    answers: [{ text: 'tengo hambre' , correct: false } , { text: 'Encantado de conocerte', correct: false}, { text: 'Cuál?', correct: true } , { text: 'Cómo? or Qué?', correct: false }], 
+    answers: [{ text: 'tengo hambre' , correct: false } , { text: 'Encantado de conocerte', correct: false}, { text: 'Cuál?', correct: false } , { text: 'Cómo? or Qué?', correct: true }], 
 },
 {
     question: 'how do you say "Where?" in Spanish?',
     answers: [{text: 'tienes hambre?', correct: false},{text: 'Un gusto', correct: false}, {text: 'Todo bien', correct: false} , {text: 'Dónde', correct: true}], 
 },
-// Questions 120-132
-{
-    question: 'how do you say "gardening" in Spanish?',
-    answers: [{ text: 'No puedo quejarme' , correct: false } , { text: 'Cómo has estado?', correct: false}, { text: 'jardinería', correct: true } , { text: 'Cómo te va?', correct: false }], 
-},
-{
-    question: 'how do you say "camping" in Spanish',
-    answers: [{text: 'tienes hambre?', correct: false},{text: 'Más o menos', correct: false}, {text: 'Encantado de conocerte', correct: false} , {text: ' acampar', correct: true}], 
-},
-{
-    question: 'how do you say "sports" in Spanish?',
-    answers: [{ text: 'Encantado de conocerte' , correct: false } , { text: 'Bien, y tú', correct: false}, { text: 'Que tal', correct: false } , { text: 'deportes', correct: true }], 
-},
-{
-    question: 'how do you say "photography" in spanish?',
-    answers: [{text: 'fotografía', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
-},
-{
-    question: 'how do you say "cooking" in Spanish?',
-    answers: [{ text: 'tengo hambre' , correct: false } , { text: 'Encantado de conocerte', correct: false}, { text: 'Cuánto cuesta esto?', correct: false } , { text: ' cocinar', correct: true }], 
-},
-{
-    question: 'how do you say "playing cards" in Spanish?',
-    answers: [{text: 'tienes hambre?', correct: false},{text: 'Un gusto', correct: false}, {text: 'Todo bien', correct: false} , {text: 'jugar cartas', correct: true}], 
-},
+
 
 ];
