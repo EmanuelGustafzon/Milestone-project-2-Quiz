@@ -1,7 +1,6 @@
 body {
     background: url(../images/spansih.jpg) no-repeat center center  ;
     position: relative;
-    width: 400px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -100,6 +99,9 @@ h2 {
 }
 /* here starts the responsive design */
 @media screen and (max-width: 1400px){
+    body {
+        background: url(../images/spanish\ 1400px.jpg) no-repeat center center  ;
+        width: 100%;}
     #play-area {
         width: 80%;
         margin-left: 10%;
@@ -109,10 +111,11 @@ h2 {
     }
 }
 @media screen and (max-width: 500px){
+    
     #play-area {
         width: 90%;
         margin-left: 5%;}
     p {
-        font-size: 130%;
+        font-size: 120%;
     }
 }

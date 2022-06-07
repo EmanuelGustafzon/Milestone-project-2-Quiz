@@ -101,6 +101,7 @@ This is a quiz for whoever who want to learn spanish. It is a collection of 100 
 - Colors from Coolers: https://coolors.co/
 - Optimizing photos in my computers standard photo app
 - support from tutors and the slack community.
+- Spanish questions: https://www.fluentu.com/blog/spanish/common-spanish-phrases/#toc_7
 
 
   
