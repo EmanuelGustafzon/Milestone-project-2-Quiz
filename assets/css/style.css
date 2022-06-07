@@ -55,9 +55,9 @@ header {
 #play-area {
     background-color:#012627;
     opacity: 0.9;
-    width: 40%;
+    width: 50%;
     height: 500px;
-    margin-left: 30%;
+    margin-left: 25%;
     margin-bottom:20px;
     margin-top: 140px;
     position: relative;
@@ -83,10 +83,10 @@ h2 {
 }
 
  p {
-    font-size: 160%;
+    font-size: 200%;
     text-align: center;
     margin-top: 50px;
-    padding: 5px ;
+    padding: 10px ;
     color:#EAEAEC;
 }
 
@@ -98,6 +98,8 @@ h2 {
     background-color:#EAEAEC;
     border: none;
     border-radius: 45px;
+    color: #012627;
+    font-size: 120%;
 
 }
 
@@ -116,13 +118,14 @@ h2 {
     display: none;
 }
 
-
+/* here starts the responsive design */
 @media screen and (max-width: 1400px){
     #play-area {
         width: 80%;
         margin-left: 10%;
-        
-
+    }
+    p {
+        font-size: 160%;
     }
 }
 
@@ -132,7 +135,7 @@ h2 {
         margin-left: 5%;}
     
     p {
-        font-size: 115%;
+        font-size: 130%;
     }
         
 

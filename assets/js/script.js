@@ -1,7 +1,6 @@
-// https://www.youtube.com/watch?v=riDzcEQbX6k
-// https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+// https://www.youtube.com/watch?v=riDzcEQbX6k Thanks to this video who helped me get started with the quiz. 
 
-//
+
 const boxQuestionOptions = document.getElementById('box-question-options');
 const questionElement = document.getElementById('question');
 const options = document.getElementById('options');
@@ -9,6 +8,7 @@ const next = document.getElementById('next');
 let shuffledQuestions, currentQuestionIndex
 let result = document.getElementById('result');
 let startQuiz = document.getElementById('start-quiz');
+// buttoms with eventlisteners for the Start buttom and next buttom.
 startQuiz.addEventListener('click', runQuiz);
 let oldScore = parseInt(document.getElementById('score').innerText);
         document.getElementById('score').innerText = 0;
@@ -18,7 +18,7 @@ next.addEventListener('click', () => {
     
  
 });
-
+// this function makes the quizrun The startbutton hides, the questions appear and the next butttom. It also sets the questions to be sorted in a random way.
 function runQuiz () {
     
         
@@ -34,7 +34,7 @@ function runQuiz () {
     startQuiz.innerHTML = "Restart";
 
 }
-
+// Function that makes the next question show up and the old question disapear.
 function setNextQuestion() {
     resetState();
 showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -44,7 +44,7 @@ showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 
-
+// This functions shows the questions and options and also creates buttoms for each answer option
 function showQuestion(question) {
 questionElement.innerText = question.question;
 
@@ -175,8 +175,8 @@ let questions = [ {
     answers: [{text: 'Te gusto!', correct: false},{text: 'Te quiero', correct: false}, {text: 'Gracias!', correct: true} , {text: 'Bien gusto!', correct: false}], 
 },
 {
-    question: 'how do you say "You’re welcome!"',
-    answers: [{ text: 'perdón [to get someone’s attention], Discuple [to excuse yourself]' , correct: false } , { text: 'Descrubrir [to get someone’s attention], Perdón [to excuse yourself]', correct: false}, { text: 'Disculpe [to get someone’s attention], Perdón [to excuse yourself]', correct: true } , { text: 'Disculpe [to get someone’s attention], Perdonse [to excuse yourself]', correct: false }], 
+    question: 'how do you say "Excuse me! (To get someones attantion)"',
+    answers: [{ text: 'perdón' , correct: false } , { text: 'Descrubrir', correct: false}, { text: 'Perlon', correct: true } , { text: 'Discargar', correct: false }], 
 },
 {
     question: 'how do you say "Sorry!" in Spanish?',
@@ -217,7 +217,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Do you speak English?"',
-    answers: [{ text: '' , correct: false } , { text: '', correct: false}, { text: 'Hablas inglés?', correct: true } , { text: '', correct: false }], 
+    answers: [{ text: 'Hablas Sueco?' , correct: false } , { text: 'Hablas algien?', correct: false}, { text: 'Hablas inglés?', correct: true } , { text: 'Dices inglés', correct: false }], 
 },
 {
     question: 'how do you say "Welcome!" in Spanish?',
@@ -239,5 +239,86 @@ let questions = [ {
     question: 'how do you say "Have a good day" in spanish?',
     answers: [{text: 'Feliz día', correct: true},{text: 'cómo callito?', correct: false}, {text: 'cómo llamas', correct: false} , {text: 'Qué llama?', correct: false}], 
 },
-
+// fourth ten
+{
+    question: 'how do you say "nice to meet you" in Spanish?',
+    answers: [{ text: 'Encantado de conocerte' , correct: true } , { text: 'Cómo has estado?', correct: false}, { text: 'Que tal', correct: false } , { text: 'Cómo te va?', correct: false }], 
+},
+{
+    question: 'how do you say "A pleasure" in Spanish?',
+    answers: [{text: 'tienes hambre?', correct: false},{text: 'Un gusto', correct: true}, {text: 'Encantado de conocerte', correct: false} , {text: 'eres bien?', correct: false}], 
+},
+{
+    question: 'how do you say "How have you been?" in Spanish?',
+    answers: [{ text: 'Encantado de conocerte' , correct: false } , { text: 'Cómo has estado?', correct: true}, { text: 'Que tal', correct: false } , { text: 'Bueno', correct: false }], 
+},
+{
+    question: 'how do you say "How’s it going? " in spanish?',
+    answers: [{text: 'Un gusto', correct: false},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: true} , {text: 'Bien gusto!', correct: false}], 
+},
+{
+    question: 'how do you say "What’s up?" in Spanish?',
+    answers: [{ text: 'tengo hambre' , correct: false } , { text: 'Encantado de conocerte', correct: false}, { text: '¿Qué pasa?', correct: true } , { text: 'Un gusto', correct: false }], 
+},
+{
+    question: 'how do you say "Good, thanks " in Spanish?',
+    answers: [{text: 'tienes hambre?', correct: false},{text: 'Un gusto', correct: false}, {text: 'Todo bien', correct: false} , {text: 'Bien, gracias', correct: true}], 
+},
+{
+    question: 'how do you say "Very well?" in Spanish?',
+    answers: [{ text: 'tienes hambre' , correct: false } , { text: 'Muy bien', correct: true}, { text: 'Al pagar?', correct: false } , { text: 'Un gusto', correct: false }], 
+},
+{
+    question: 'how do you say "All good " in spanish?',
+    answers: [{text: 'Muy bien', correct: false},{text: 'tienes hambre', correct: false}, {text: 'Un gusto', correct: false} , {text: 'Todo bien', correct: true}], 
+},
+{
+    question: 'how do you say "I’m tired" in Spanish?',
+    answers: [{ text: 'Mi gustaria la musica?' , correct: false } , { text: 'Estoy cansado', correct: true}, { text: 'Me gusta a cantar?', correct: false } , { text: 'Me gustaria cantar', correct: false }], 
+},
+{
+    question: 'how do you say "I’m sick" in spanish?',
+    answers: [{text: 'Estoy enfermo', correct: true},{text: 'Ahora Quiero beber agua', correct: false}, {text: 'Me nesessito aqua', correct: false} , {text: 'Me necessito acui', correct: false}], 
+},
+// fith ten same as fourth
+{
+    question: 'how do you say "nice to meet you" in Spanish?',
+    answers: [{ text: 'Encantado de conocerte' , correct: true } , { text: 'Cómo has estado?', correct: false}, { text: 'Que tal', correct: false } , { text: 'Cómo te va?', correct: false }], 
+},
+{
+    question: 'how do you say "A pleasure" in Spanish?',
+    answers: [{text: 'tienes hambre?', correct: false},{text: 'Un gusto', correct: true}, {text: 'Encantado de conocerte', correct: false} , {text: 'eres bien?', correct: false}], 
+},
+{
+    question: 'how do you say "How have you been?" in Spanish?',
+    answers: [{ text: 'Encantado de conocerte' , correct: false } , { text: 'Cómo has estado?', correct: true}, { text: 'Que tal', correct: false } , { text: 'Bueno', correct: false }], 
+},
+{
+    question: 'how do you say "How’s it going? " in spanish?',
+    answers: [{text: 'Un gusto', correct: false},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: true} , {text: 'Bien gusto!', correct: false}], 
+},
+{
+    question: 'how do you say "What’s up?" in Spanish?',
+    answers: [{ text: 'tengo hambre' , correct: false } , { text: 'Encantado de conocerte', correct: false}, { text: '¿Qué pasa?', correct: true } , { text: 'Un gusto', correct: false }], 
+},
+{
+    question: 'how do you say "Good, thanks " in Spanish?',
+    answers: [{text: 'tienes hambre?', correct: false},{text: 'Un gusto', correct: false}, {text: 'Todo bien', correct: false} , {text: 'Bien, gracias', correct: true}], 
+},
+{
+    question: 'how do you say "Very well?" in Spanish?',
+    answers: [{ text: 'tienes hambre' , correct: false } , { text: 'Muy bien', correct: true}, { text: 'Al pagar?', correct: false } , { text: 'Un gusto', correct: false }], 
+},
+{
+    question: 'how do you say "All good " in spanish?',
+    answers: [{text: 'Muy bien', correct: false},{text: 'tienes hambre', correct: false}, {text: 'Un gusto', correct: false} , {text: 'Todo bien', correct: true}], 
+},
+{
+    question: 'how do you say "I’m tired" in Spanish?',
+    answers: [{ text: 'Mi gustaria la musica?' , correct: false } , { text: 'Estoy cansado', correct: true}, { text: 'Me gusta a cantar?', correct: false } , { text: 'Me gustaria cantar', correct: false }], 
+},
+{
+    question: 'how do you say "I’m sick" in spanish?',
+    answers: [{text: 'Estoy enfermo', correct: true},{text: 'Ahora Quiero beber agua', correct: false}, {text: 'Me nesessito aqua', correct: false} , {text: 'Me necessito acui', correct: false}], 
+},
 ];
