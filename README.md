@@ -66,7 +66,7 @@ This is a quiz for whoever who want to learn spanish. It is a collection of 100 
   ## User Expereince
 
   - It is easy to learn how the quiz works. The user gets all the information needed to understand and play the quiz.
-  - The buttoms are big and easy for the users to test.
+  - The buttoms are big and easy for the users to see and press the right button.
   - The user gets a answer immigetly after answering a question of what answer was correct. This good for the user to learn the spanish phrases in the quiz. 
 
   
@@ -74,7 +74,7 @@ This is a quiz for whoever who want to learn spanish. It is a collection of 100 
 
 - Solved
 
-  - It was a bug in the score counter. It did not work becuase if the user always got points even if the user gave the wrong answer. To solve this I needed to remove the oldscore variable from the setStatusClass function to the selectAnswer function in the JavaScript. 
+  - It was a bug in the score counter. It did not work becuase the user always got points even if the user gave the wrong answer. To solve this I needed to remove the oldscore variable from the setStatusClass function to the selectAnswer function in the JavaScript. 
 
 - Unsolved bugs
     
@@ -83,7 +83,7 @@ This is a quiz for whoever who want to learn spanish. It is a collection of 100 
 
   ## Other Featured that can be implemented
    
-  - There is many things that can improve this quiz. First of all it would be good to have a level system so the more the user learn the more advanced the questions become. The secound feature is to have a audio buttom so that the user can learn to pronaunce the phrases.
+  - There is many things that can improve this quiz. First of all it would be good to have a level system so the more the user learn the more advanced the questions become. The secound feature is to have a audio button so that the user can learn to pronaunce the phrases.
 
   ## Deployment 
 
