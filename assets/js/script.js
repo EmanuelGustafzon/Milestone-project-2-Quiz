@@ -348,7 +348,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "swimming" in spanish?',
-    answers: [{text: 'Es una lástima', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
+    answers: [{text: 'Nadar', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
 },
 {
     question: 'how do you say "Good luck!" in Spanish?',
