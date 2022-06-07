@@ -65,7 +65,7 @@ function selectAnswer (e) {
         document.getElementById('score').innerText = ++oldScore;
     }
 });
-if (shuffledQuestions.length > currentQuestionIndex + 116) {
+if (shuffledQuestions.length > currentQuestionIndex + 111) {
     next.classList.remove('hide');
   } else {
     result.classList.remove('hide');
@@ -175,7 +175,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "I don’t understand" in Spanish?',
-    answers: [{text: 'nis', correct: false},{text: 'No lo se', correct: true}, {text: 'se', correct: false} , {text: 'ni', correct: false}], 
+    answers: [{text: 'nis', correct: false},{text: 'No entiendo', correct: true}, {text: 'se', correct: false} , {text: 'ni', correct: false}], 
 },
 {
     question: 'how do you say "Can you repeat that?" in Spanish?',
@@ -344,7 +344,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Don’t worry! " in Spanish?',
-    answers: [{ text: 'Encantado de conocerte' , correct: false } , { text: 'Bien, y tú', correct: false}, { text: 'Que tal', correct: false } , { text: 'nadar', correct: true }], 
+    answers: [{ text: 'Encantado de conocerte' , correct: false } , { text: 'Bien, y tú', correct: false}, { text: 'Que tal', correct: false } , { text: 'No te precupes', correct: true }], 
 },
 {
     question: 'how do you say "swimming" in spanish?',
@@ -471,7 +471,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Can I ask you for a" in spanish?',
-    answers: [{text: 'Es la una', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Tus hijos aún viven en casa?', correct: false} , {text: 'Le pido un(a)', correct: false}], 
+    answers: [{text: 'Es la una', correct: false},{text: 'Encantado de conocerte', correct: false}, {text: 'Tus hijos aún viven en casa?', correct: false} , {text: 'Le pido un(a)', correct: true}], 
 },
 {
     question: 'how do you say "It is eight o’clock" in Spanish?',
@@ -561,7 +561,7 @@ let questions = [ {
 },
 {
     question: 'how do you say "Who? " in spanish?',
-    answers: [{text: 'Has visto esa nueva película?', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
+    answers: [{text: 'Quién?', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
 },
 {
     question: 'how do you say "What?" in Spanish?',
@@ -595,30 +595,6 @@ let questions = [ {
 {
     question: 'how do you say "playing cards" in Spanish?',
     answers: [{text: 'tienes hambre?', correct: false},{text: 'Un gusto', correct: false}, {text: 'Todo bien', correct: false} , {text: 'jugar cartas', correct: true}], 
-},
-{
-    question: 'how do you say "It’s freezing outside." in Spanish?',
-    answers: [{ text: 'No puedo quejarme' , correct: false } , { text: 'Cómo has estado?', correct: false}, { text: 'Hace mucho frío ahí fuera.', correct: true } , { text: 'Cómo te va?', correct: false }], 
-},
-{
-    question: 'how do you say "There’s a big storm coming." in Spanish',
-    answers: [{text: 'tienes hambre?', correct: false},{text: 'Más o menos', correct: false}, {text: 'Encantado de conocerte', correct: false} , {text: 'Se acerca una gran tormenta.', correct: true}], 
-},
-{
-    question: 'how do you say "Have you read any good books lately? " in Spanish?',
-    answers: [{ text: 'Encantado de conocerte' , correct: false } , { text: 'Bien, y tú', correct: false}, { text: 'Que tal', correct: false } , { text: 'Has leído algún buen libro últimamente?', correct: true }], 
-},
-{
-    question: 'how do you say "Have you seen that new film? " in spanish?',
-    answers: [{text: 'Has visto esa nueva película?', correct: true},{text: 'Encantado de conocerte', correct: false}, {text: 'Cómo te va?', correct: false} , {text: 'Bien gusto!', correct: false}], 
-},
-{
-    question: 'how do you say "What’s your favorite restaurant? " in Spanish?',
-    answers: [{ text: 'tengo hambre' , correct: false } , { text: 'Encantado de conocerte', correct: false}, { text: 'Cuánto cuesta esto?', correct: false } , { text: 'Cuál es tu restaurante favorito?', correct: true }], 
-},
-{
-    question: 'how do you say "Shall we go for a drink?" in Spanish?',
-    answers: [{text: 'tienes hambre?', correct: false},{text: 'Un gusto', correct: false}, {text: 'Todo bien', correct: false} , {text: 'Vamos a tomar una copa?', correct: true}], 
 },
 
 ];
