@@ -198,7 +198,46 @@ let questions = [ {
     question: 'how do you say "What is your name / What are you called ?" in spanish?',
     answers: [{text: 'Cómo te llamas?', correct: true},{text: 'cómo callito?', correct: false}, {text: 'cómo llamas', correct: false} , {text: 'Qué llama?', correct: false}], 
 },
-
-
+//third ten
+{
+    question: 'how do you say "I need help" in Spanish?',
+    answers: [{ text: 'Necesito ayuda' , correct: true } , { text: 'yo', correct: false}, { text: 'vi', correct: false } , { text: 'ni', correct: false }], 
+},
+{
+    question: 'how do you say "I don’t understand" in Spanish?',
+    answers: [{text: 'nis', correct: false},{text: 'Puede repetirlo?', correct: true}, {text: 'se', correct: false} , {text: 'ni', correct: false}], 
+},
+{
+    question: 'how do you say "Can you repeat that?" in Spanish?',
+    answers: [{ text: 'Lo se' , correct: false } , { text: 'No lo se', correct: true}, { text: 'No puedo', correct: false } , { text: 'No quiero', correct: false }], 
+},
+{
+    question: 'how do you say "I’m lost " in spanish?',
+    answers: [{text: 'Te gusto!', correct: false},{text: 'Te quiero', correct: false}, {text: 'Estoy perdida ', correct: true} , {text: 'Bien gusto!', correct: false}], 
+},
+{
+    question: 'how do you say "Do you speak English?"',
+    answers: [{ text: '' , correct: false } , { text: '', correct: false}, { text: 'Hablas inglés?', correct: true } , { text: '', correct: false }], 
+},
+{
+    question: 'how do you say "Welcome!" in Spanish?',
+    answers: [{text: 'Hasta luego', correct: true},{text: 'Lo quiero?', correct: false}, {text: 'Lo perdon!', correct: false} , {text: 'Lo discuple!', correct: false}], 
+},
+{
+    question: 'how do you say "See you later" in Spanish?',
+    answers: [{ text: 'Buenos noches' , correct: false } , { text: 'Buenos días', correct: true}, { text: 'hola', correct: false } , { text: 'buenos tardes', correct: false }], 
+},
+{
+    question: 'how do you say "See you" in spanish?',
+    answers: [{text: 'Buenos noches', correct: false},{text: 'Buenos días', correct: false}, {text: 'hola', correct: false} , {text: 'Nos vemos', correct: true}], 
+},
+{
+    question: 'how do you say "Take care!" in Spanish?',
+    answers: [{ text: 'Cual es tú numero' , correct: false } , { text: 'Cuídate!', correct: true}, { text: 'cual nombre tienes', correct: false } , { text: 'Nombre cual es?', correct: false }], 
+},
+{
+    question: 'how do you say "Have a good day" in spanish?',
+    answers: [{text: 'Feliz día', correct: true},{text: 'cómo callito?', correct: false}, {text: 'cómo llamas', correct: false} , {text: 'Qué llama?', correct: false}], 
+},
 
 ];
