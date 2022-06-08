@@ -62,7 +62,7 @@ header {
     text-align: center;
 }
 h2 {
-    font-size: 150%;
+    font-size: 200%;
     text-align: center;
     padding-top: 12px;
     color:#EAEAEC;
@@ -119,5 +119,8 @@ h2 {
     }
     .btn {
         font-size: 100%;
+    }
+    h2 {
+        font-size: 170%;
     }
 }
