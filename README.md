@@ -1,5 +1,5 @@
 # Learn Spanish Quiz
-This is a quiz for whoever who want to learn spanish. It is a collection of 100 commonly used phrases. I find quizes a great way to learn a language. If you have never spoken spanish before the first step is to speak as much as possible. Use those phrases daily and you will see how you soon can start having small conversations with people in spanish. 
+This is a quiz for whoever who want to learn spanish. It is a collection of 100+ commonly used phrases and words. I find quizes a great way to learn a language. If you have never spoken spanish before the first step is to speak as much as possible. Use those phrases daily and you will see how you soon can start having small conversations with people in spanish. 
 ## https://emanuelgustafzon.github.io/Milestone-project-2-Quiz/.
 
 ![Resposivity](/assets/images/IMG-1525.jpg)
@@ -12,13 +12,13 @@ This is a quiz for whoever who want to learn spanish. It is a collection of 100 
 ![Header](/assets/images/score.jpg)
 
 - Landing page
-  - The first section the user sees is a introduction to the quiz and a run buttom.
+  - The first thing the user sees is an introduction to the quiz and a run buttom.
   - It would be confusing for the user to only see a quiz when landing on the page. That is why it is hidden in the beginning and instead a introduction to the quiz is shown. 
 
 ![Landing page](/assets/images/Sk%C3%A4rmbild%20(114).png)
  
 - Quiz
-  - The quiz has a total amount of 100 questions. This is questions about phrases in spanish. The purpose is that the user will learn spanish in an entertaining way. 
+  - The quiz has a total amount of 100 questions. This is questions to lear phrases and words in spanish. The purpose is that the user will learn spanish in an entertaining way. 
   - It would be tiereing to go through a 100 questions at ones. That is why every time you play the quiz you get 15 questions to answer. The 15 questions is totally random from the collection of 100 spanish phrases. 
 
 ![Quiz](/assets/images/Sk%C3%A4rmbild%20(115).png)
@@ -29,7 +29,7 @@ This is a quiz for whoever who want to learn spanish. It is a collection of 100 
 ![Answer](/assets/images/Sk%C3%A4rmbild%20(116).png)
 
 - Finished Quiz section
-  - After the user have answered the 15 questions a score is shown up. 
+  - After the user have answered the 15 questions the final score is shown up. 
   - The user also get the option to restart the quiz.  
 
 ![Finished quiz round](/assets/images/Sk%C3%A4rmbild%20(117).png)
@@ -67,7 +67,7 @@ This is a quiz for whoever who want to learn spanish. It is a collection of 100 
 
   - It is easy to learn how the quiz works. The user gets all the information needed to understand and play the quiz.
   - The buttoms are big and easy for the users to see and press the right button.
-  - The user gets a answer immigetly after answering a question of what answer was correct. This good for the user to learn the spanish phrases in the quiz. 
+  - The user get a answer immigetly after answering a question of what answer was correct. This is good for the user to learn the spanish phrases in the quiz. 
 
   
   ## Bugs and Errors

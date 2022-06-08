@@ -9,27 +9,27 @@ let startQuiz = document.getElementById('start-quiz');
 // buttoms with eventlisteners for the Start buttom and next buttom.
 startQuiz.addEventListener('click', runQuiz);
 let oldScore = parseInt(document.getElementById('score').innerText);
-        document.getElementById('score').innerText = 0;
 next.addEventListener('click', () => {
     currentQuestionIndex++; 
     setNextQuestion();
+
 });
-// this function makes the quizrun The startbutton hides, the questions appear and the next butttom. It also sets the questions to be sorted in a random way.
+// this function makes the quizrun The startbutton hides, the next buttom and questions appear. It also sets the questions to be sorted in a random way.
 function runQuiz () { 
         boxQuestionOptions.classList.remove('hide');
         next.classList.remove('hide');
         startQuiz.classList.add('hide');
         result.classList.add('hide');
         document.getElementById('intro').classList.add('hide')
+        // reset score
         oldScore = parseInt(document.getElementById('score').innerText);
         document.getElementById('score').innerText = 0;
-
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     setNextQuestion();
     startQuiz.innerHTML = "Restart";
 }
-// Function that makes the next question show up and the old question disapear.
+// Function passes over to reset old question and make next question appear.
 function setNextQuestion() {
     resetState();
 showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -68,6 +68,7 @@ function selectAnswer (e) {
         document.getElementById('score').innerText = ++oldScore;
     }
 });
+// finish game, if the user has answered 15 questions the score is shown and the option to restart game.
 if (shuffledQuestions.length > currentQuestionIndex + 104) {
     next.classList.remove('hide');
   } else {
